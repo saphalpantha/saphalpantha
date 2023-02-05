@@ -1,0 +1,56 @@
+.card{
+
+    /* max-width: 00px; */
+    margin:  2rem auto;
+    background-color: rgb(38, 37, 34);
+    /* height: 100vh; */
+    border: 2px solid rgb(52, 52, 52);
+    display: flex;
+    
+    flex-direction: column;
+    border-radius: 15px;
+    
+}
+
+.card .cardcontent{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    padding: 0.5em;
+    
+}
+
+.cardcontent .cardhead{
+    display: flex;
+    margin: 1rem;
+    justify-content: space-evenly;
+}
+
+.cardhead h3{
+    flex: 0.3;
+    font-size: 2rem;
+}
+.cardhead span{
+    flex:0.5;
+    color: rgb(199, 199, 199);
+}
+
+.cardcontent .cardbar{
+    position: relative;
+    width: 100%;
+    background-color: rgb(126, 126, 126);
+    height: 7px;
+}
+
+.cardbarfill{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: inherit;
+    /* width: 200px; */
+    background-color: rgb(255, 255, 113);
+    transition: width 200ms ease-in;
+    
+}
+
+

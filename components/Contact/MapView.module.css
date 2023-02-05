@@ -1,0 +1,26 @@
+.mapview{
+       height: 25rem;
+       min-width: 40rem;
+       border-radius: 30px;
+       text-align: center;
+       /* transition: all 200ms ease-in; */
+
+}
+
+.mapview:hover{
+    /* z-index: -1; */
+    /* height: 100vh; */
+}
+
+
+
+
+.mapview .loading{
+    margin:  0 auto;
+    text-align: center;
+}
+.loading h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 900;
+}

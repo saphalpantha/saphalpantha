@@ -1,0 +1,13 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: baseline; */
+    justify-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.card span{
+    color: rgb(255, 216, 90);
+    font-size: 1.5rem;
+}

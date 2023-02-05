@@ -1,0 +1,177 @@
+.heading span{
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight:bolder;
+    color: white;
+    padding-left: 1em;
+    /* line-height: 20px; */
+    top : 5%;
+    /* border: 2px; */
+    border-bottom: 5px solid rgb(255, 217, 101);
+    border-width: 0.5rem;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+
+
+
+
+.about .aboutflex{
+    display: flex;
+    /* margin: 0rem auto; */
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    justify-content: space-between;
+    min-height: 100vh;
+    /* padding: 1em; */
+    /* background-color: blue; */
+}
+
+
+
+.description{
+    max-width: max-content;
+
+}
+
+.description p{
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 1.5em;
+    color: rgb(200, 196, 196);
+
+    
+    
+} 
+
+
+
+
+
+.works, .testimonials{
+    /* padding-bottom:40em ; */
+    /* background-color: rgb(48, 158, 255) ; */
+    width: 100%;
+
+}
+
+
+
+
+
+.hiii{
+    /* position: absolute; */
+    font-size: 3.5rem;
+    font-weight:bolder;
+    color: white;
+    padding-left: 1em;
+    /* line-height: 20px; */
+    /* top : 5%; */
+    /* border: 2px; */
+    border-bottom: 5px solid rgb(255, 217, 101);
+    border-width: 0.5rem;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.worksitems{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    /* flex:content; */
+    /* flex-wrap: column wrap; */
+    /* flex-wrap: row wrap; */
+    /* flex-basis: 30rem; */
+}
+
+.worksitems>*{
+    margin:  0 auto;
+    margin: 2rem;
+    flex: 1 1 350px;
+}
+
+
+.testimonials{
+    max-width: 1000px;
+    overflow-x: scroll;
+    /* overflow-y: hidden; */
+    scroll-behavior: smooth;
+    /* height: 2; */
+
+}
+
+.testimonials .testiitems{
+
+    /* overflow-x: scroll; */
+    /* padding: ; */
+    /* margin: 4rem ; */
+    overflow-y: hidden;
+    display: flex;
+    /* width: 100%; */
+    /* flex-wrap: nowrap; */
+    /* overflow-x: scroll; */
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    /* background-color: brown; */
+    justify-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+
+.testimonials .testiitems > *{
+    margin:  0 auto;
+    margin: 2rem;
+    flex:  1 0 450px;
+}
+
+
+.worksitemshelp > *{
+    max-width: 200rem;
+    /* overflow-x: scroll; */
+    /* overflow:scroll; */
+    /* flex:  0 1 100%; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* overflow: hidden; */
+    /* display: block; */
+}
+
+
+
+.items div{
+    /* display: flex; */
+    display: inline-block;
+    /* overflow-x: scroll ; */
+}
+
+
+
+.clients .clientsitems{
+
+    /* overflow-x: scroll; */
+    /* padding: ; */
+    /* margin: 4rem ; */
+    overflow-y: hidden;
+    display: flex;
+    /* width: 100%; */
+    /* flex-wrap: nowrap; */
+    /* overflow-x: scroll; */
+    /* flex-direction: row-reverse; */
+    align-items: center;
+    /* background-color: brown; */
+    justify-items: center;
+    /* flex-wrap: wrap; */
+
+}
+
+
+.testimonials .clientsitems > *{
+    margin:  0 auto;
+    margin: 2rem;
+    flex:  0 0 250px;
+}

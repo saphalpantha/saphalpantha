@@ -1,0 +1,67 @@
+.resume{
+    color: white;
+    font-size: 2rem;
+}
+
+
+.heading span{
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight:bolder;
+    color: white;
+    padding-left: 1em;
+    /* line-height: 20px; */
+    top : 5%;
+    /* border: 2px; */
+    border-bottom: 5px solid rgb(255, 217, 101);
+    border-width: 0.5rem;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+
+
+.resumeflex{
+    padding-top: 2em;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resumeflex .edu{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+ .edu .logo{
+    padding-left:2em ;
+    flex: 0.1;
+}
+
+
+.edu .content{
+    flex:0.8;
+}
+
+
+
+.resumeflex .experience{
+    display: flex;
+    padding-top: 1em;
+    margin-top: 2rem;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+
+}
+
+.experience .logo{
+    padding-left:2em ;
+    flex: 0.1;
+}
+
+.experience .content{
+    flex:0.8;
+    justify-content: space-evenly;
+}

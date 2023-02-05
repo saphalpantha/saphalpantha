@@ -1,0 +1,253 @@
+.sidebar{
+    background-color: rgb(38, 37, 34);
+    /* height: 100vh; */
+    border: 2px solid rgb(52, 52, 52);
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    /* position: relative; */
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    flex: 0.3;
+    
+    
+}
+
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.sidebar .image{
+    background-color: rgb(74, 74, 74);
+    border-radius: 12px;
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin:  0 auto;
+    
+
+}
+
+.heading h1{
+    margin: 2rem auto;
+    font-size: 3rem;
+    color: white;
+}
+
+.heading span{
+    margin: 2rem auto;
+    background-color:rgb(52, 52, 52);
+    color: white;
+    padding: 1em 3em;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+
+
+.sidebar hr{
+   margin: 0rem auto;
+   width: 20rem;
+   align-self: center;
+
+
+}
+
+.sidebar .items{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-items: center;
+    justify-content: space-between;
+}
+
+
+
+.contains{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.2;
+}
+
+
+.item .content{
+    display: flex;
+    flex-direction: column;
+    margin-left:1rem;
+    color: white;
+    font-size: 1.5rem;
+    
+
+}
+
+.content span{
+    color: rgb(119, 119, 119);
+    margin-left: 2rem;
+}
+
+
+.items .logo{
+    flex: 0.3;
+    padding: 1em;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+}
+
+.items .contain{
+    padding: 1em;
+    flex:0.8;
+    margin-right: 1rem;
+}
+
+.contain span{
+    color: rgb(161, 161, 161);
+}
+
+.contain h3{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    color: rgb(162, 162, 162);
+    
+}
+
+.footer div{
+    margin: auto 1rem;
+}
+
+.logo div{
+    /* background-color: aqua; */
+    width: 50px;
+    border-radius: 10px;
+    background-color: rgb(54, 52, 52);
+    height: 50px;
+    margin-left:  4rem;
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    
+
+}
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .sidebar {
+      flex-direction: row;
+      flex: 0.01;
+      max-width: 80rem;
+      width: 100%;
+      margin:  2rem auto;
+      /* width: 90%; */
+      
+    }
+
+    .sidebar hr{
+        display: none;
+    }
+
+    .heading .image{
+        display: none;
+    }
+
+    .sidebar .items{
+        display: none;
+    }
+
+    .sidebar .footer{
+        display: none;
+    }
+
+
+  }
+@media screen and (max-width: 1024px) {
+    .sidebar {
+      flex-direction: row;
+      flex: 0.01;
+      max-width: 60rem;
+      width: 100%;
+      margin:  4rem auto;
+      /* width: 90%; */
+      
+    }
+
+
+
+    .sidebar span strong{
+        font-size: 0.5rem;
+    }
+    .sidebar hr{
+        display: none;
+    }
+
+    .heading .image{
+        display: none;
+    }
+
+    .sidebar .items{
+        display: none;
+    }
+
+    .sidebar .footer{
+        display: none;
+    }
+
+
+  }
+@media screen and (max-width: 770px) {
+    .sidebar {
+      flex-direction: row;
+      flex: 0.01;
+      max-width: 40rem;
+      width: 100%;
+      margin:  6rem auto;
+      /* width: 90%; */
+      
+    }
+
+
+
+    .sidebar span strong{
+        font-size: 0.5rem;
+    }
+    .sidebar hr{
+        display: none;
+    }
+
+    .heading .image{
+        display: none;
+    }
+
+    .sidebar .items{
+        display: none;
+    }
+
+    .sidebar .footer{
+        display: none;
+    }
+
+
+  }
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+.heading span{
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight:bolder;
+    color: white;
+    padding-left: 1em;
+    /* line-height: 20px; */
+    top : 5%;
+    /* border: 2px; */
+    border-bottom: 5px solid rgb(255, 217, 101);
+    border-width: 0.5rem;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+
+.contactflex{
+    display: flex;
+    flex-direction: column;
+}
+.contactflex .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactflex .map{
+    /* height: 30vh; */
+    padding: 4em;
+}
+
+.map .mapcont{
+    height: 30vh;
+}

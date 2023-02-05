@@ -1,0 +1,67 @@
+.home{
+    display: flex;
+    background-color: rgb(42, 42, 42);
+    justify-content: space-evenly;
+    padding: 12em;
+    margin:  0 auto;
+    position: relative;
+    transition: all 200ms ease-in-out;
+}
+
+.home .toggle{
+        flex:0.01;
+     background-color:white ;
+      position:absolute ;
+      top:2%;
+      left:20%;
+      padding:0.5em 1em;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border-radius:20px;
+      transition: all 200ms ease-in-out;
+}
+
+.home .toggle:hover{
+    background-color: rgb(248, 255, 124);
+    color: rgb(0, 0, 0);
+}
+.home .toggle:active{
+    color: white;
+    background-color: rgb(238, 255, 0);
+}
+
+.toggle .open{
+    top:5.5%;
+    /* position: ap; */
+    left:50%;
+}
+.toggle .close{
+    /* right: 10%; */
+}
+
+
+@media screen and (max-width: 1250px) {
+    .home {
+      flex-direction: column;
+      justify-content: space-between;
+      
+    
+      
+    }
+
+    
+  }
+
+
+
+  @media screen and (max-width: 1024px) {
+    .home {
+      flex-direction: column;
+      justify-content: space-between;
+      
+    
+      
+    }
+
+    
+  }

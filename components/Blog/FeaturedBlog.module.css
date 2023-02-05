@@ -1,0 +1,31 @@
+.heading span{
+    position: absolute;
+    font-size: 3.5rem;
+    font-weight:bolder;
+    color: white;
+    padding-left: 1em;
+    /* line-height: 20px; */
+    top : 5%;
+    /* border: 2px; */
+    border-bottom: 5px solid rgb(255, 217, 101);
+    border-width: 0.5rem;
+    border-end-end-radius: 10px;
+    border-start-start-radius: 10px;
+}
+
+.blogflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+
+.blogflex .blogs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin: 2rem; */
+
+    margin: 1rem 2rem;
+}
