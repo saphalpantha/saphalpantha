@@ -27,11 +27,25 @@
 
   @media screen and (max-width: 1024px) {
     .main {
+      /* max-width: 100; */
       min-height: 100vh;
       max-width: 1024px;
       padding: 1rem;
       
     }
-
+    
     
   }
+  
+  
+@media screen and (max-width: 769px) {
+    .main {
+      padding: none;
+      /* padding: 0.2rem; */
+      
+    
+      
+    }
+  }
+
+    

@@ -2,7 +2,8 @@
     display: flex;
     background-color: rgb(42, 42, 42);
     justify-content: space-evenly;
-    padding: 12em;
+    /* padding: 12em; */
+    padding: 4em;
     margin:  0 auto;
     position: relative;
     transition: all 200ms ease-in-out;
@@ -44,6 +45,7 @@
 @media screen and (max-width: 1250px) {
     .home {
       flex-direction: column;
+      padding: 2em;
       justify-content: space-between;
       /* padding: 2rem; */
       
@@ -59,6 +61,7 @@
   @media screen and (max-width: 1024px) {
     .home {
       flex-direction: column;
+      padding: 1em;
       justify-content: space-between;
       /* padding: 0.2rem; */
       
@@ -68,6 +71,20 @@
 
     
   }
+  @media screen and (max-width: 769px) {
+    .home {
+      flex-direction: column;
+      padding: none;
+      justify-content: space-between;
+      /* padding: 0.2rem; */
+      
+    
+      
+    }
+
+    
+  }
+
 
 
 
