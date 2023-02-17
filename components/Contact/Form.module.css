@@ -195,7 +195,7 @@
     .form .nameput{
         /* display: flex; */
         justify-content: space-evenly;
-        width: 50rem;
+        width: 90%;
         flex-direction: column;
 
         transition: all 200ms ease-in-out;
