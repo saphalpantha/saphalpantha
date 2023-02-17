@@ -40,7 +40,7 @@
   
 @media screen and (max-width: 769px) {
     .main {
-      padding: none;
+      padding: 0;
       /* padding: 0.2rem; */
       
     

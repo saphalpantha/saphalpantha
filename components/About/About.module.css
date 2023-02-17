@@ -201,3 +201,29 @@
     margin: 2rem;
     flex:  0 0 250px;
 }
+
+
+
+@media screen and (max-width: 769px) {
+    .worksitems>*{
+        margin:  0 auto;
+        margin: 1rem;
+        flex: 1 1 150px;
+    }
+    
+    
+    .testimonials{
+        max-width: 500px;
+        overflow-x: scroll;
+        /* overflow-y: hidden; */
+        scroll-behavior: smooth;
+        /* height: 5rem; */
+    
+    }
+    
+    .testimonials .testiitems > *{
+        margin:  0 auto;
+        margin: 1rem;
+        flex:  1 0 350px;
+    }
+}

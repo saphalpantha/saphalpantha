@@ -32,3 +32,21 @@
     margin-top: 1rem;
   }
   
+
+
+  @media screen and (max-width: 769px) {
+
+      .title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .description{
+    color: rgb(180, 180, 180);
+    font-size: 1.5rem;
+    padding: 1em;
+    margin-bottom: 1rem;
+  }
+  
+}
+

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600&family=Lato:wght@300&display=swap');
 html{
-  font-size: 60%;
+  font-size: 62.2%;
   font-family: 'Cabin Condensed', sans-serif;
   /* min-height: ; */
   /* max-width: 1700px; */
@@ -14,7 +14,7 @@ html{
 
 *{
   margin: 0;
-  padding: 0;
+  padding: 0rem;
   box-sizing: border-box;
 }
 

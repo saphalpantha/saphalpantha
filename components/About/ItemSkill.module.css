@@ -45,3 +45,28 @@
     font-weight: bold;
     /* padding: ; */
 }
+
+
+@media screen and (max-width: 769px) {
+    .card{
+        padding: 2em;
+        margin: 2rem;
+    }
+
+    .carditems{
+        height: 16vh;
+        margin-left: 1rem;
+    }
+    
+    .carditems h2{
+        font-size: 2rem;
+        font-weight:bolder;
+        color: white;
+    }
+
+    .carditems span{
+        margin: 0.3rem;
+        font-size: 1.7em;
+        color: rgb(221, 221, 221);
+    }
+}
