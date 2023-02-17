@@ -35,7 +35,7 @@ const SideBar = (props) => {
     <div className={classes.sidebar}>
         <div className={classes.heading}>
           <div className={classes.myimg}>
-            <Image src={sidebarData.profile_img} width={150} height={150} />
+            <Image src={sidebarData.profile_img} width={150} height={150}  key={sidebarData.profile_name}/>
           </div>
           <strong><h1>{sidebarData.profile_name}</h1></strong>
           <span>{sidebarData.post}</span>

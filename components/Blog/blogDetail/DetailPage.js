@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './DetailPage.module.css'
+import Image from 'next/image';
 const DetailPage = ({vlogs}) => {
   // const vlogs = [];
   const title = vlogs[0].title;
@@ -14,7 +15,7 @@ const DetailPage = ({vlogs}) => {
     <h1 className={styles.title}>{title}</h1>
     <p className={styles.description}>{desc}</p>
     <p className={styles.vlogType}>Vlog Type: {vlog_type}</p>
-    <img src={imgPath} alt={title} className={styles.image} />
+    <Image src={imgPath} alt={title} className={styles.image} key={title} />
   </div>
   )
 }

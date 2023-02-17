@@ -9,11 +9,11 @@ const BlogCardContain = (props) => {
     {props.vlogs.map(vlog => {
         const imgPath = `/images/${vlog.img}`
         return(
-<Link href={`blog/${vlog.title}`}>
-    <Card  key={`${Math.random().toString() + vlog.title('should first', () => { second })}`}className={classes.blogcard}>
+<Link href={`blog/${vlog.title}`} key={vlog.title}>
+    <Card  key={`${Math.random().toString() + vlog.title}`}className={classes.blogcard}>
         <div className={classes.cardcontain}>
             <div className={classes.img}>
-                <Image src={imgPath} width={250} height={250} alt={vlog.title}/>
+                <Image src={imgPath} width={250} height={250} alt="img"/>
             </div>
             <div className={classes.date}>
                 <span>{vlog.vlog_type}</span>

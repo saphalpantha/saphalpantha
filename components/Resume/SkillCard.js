@@ -15,7 +15,7 @@ const SkillCard = () => {
     <div className={classes.card}>
        {skillData.map((item) => {
         return(
-            <div className={classes.cardcontent}>
+            <div className={classes.cardcontent} key={item.id}>
             <div className={classes.cardhead}>
                 <h3>{item.title}</h3>
                 <span>{`${item.val}%`}</span>
