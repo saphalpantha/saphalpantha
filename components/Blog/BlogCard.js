@@ -10,7 +10,7 @@ const BlogCardContain = (props) => {
         const imgPath = `/images/${vlog.img}`
         return(
 <Link href={`blog/${vlog.title}`}>
-    <Card className={classes.blogcard}>
+    <Card  key={`${Math.random().toString() + vlog.title('should first', () => { second })}`}className={classes.blogcard}>
         <div className={classes.cardcontain}>
             <div className={classes.img}>
                 <Image src={imgPath} width={250} height={250} alt={vlog.title}/>
