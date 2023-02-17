@@ -192,12 +192,18 @@
 @media screen and (max-width: 769px) {
 
 
+    .formcontain{
+       max-width: 760px;
+    }
+
+
     .form .nameput{
         /* display: flex; */
         justify-content: space-evenly;
-        width: 90%;
+        width:150%;
+        /* padding: 0rem; */
         flex-direction: column;
-
+        
         transition: all 200ms ease-in-out;
     
         

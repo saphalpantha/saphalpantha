@@ -41,9 +41,9 @@
   
 @media screen and (max-width: 769px) {
     .main {
-      padding: 0;
+      padding: 0em 2em;
       /* padding: 0.2rem; */
-      margin: 1;
+      /* margin: 0rem 4rem; */
     
       
     }
