@@ -1,6 +1,10 @@
 .mapview{
-       height: 25rem;
-       min-width: 40rem;
+       height: 22rem;
+       margin: 1rem;
+
+       /* max-height: 20rem; */
+       /* padding: 0; */
+       /* min-width: 40rem; */
        border-radius: 30px;
        text-align: center;
        /* transition: all 200ms ease-in; */

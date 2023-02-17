@@ -10,8 +10,7 @@ const FeaturedBlog = (props) => {
             </span>
         </header>
         <div className={classes.blogs}>
-
-            <BlogCardContain blogId={props.blogId}/>
+            <BlogCardContain blogId={props.vlogs.id} vlogs={props.vlogs}/>
         </div>
    </div> 
   )

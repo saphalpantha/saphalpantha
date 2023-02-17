@@ -1,15 +1,35 @@
-.sidebar{
-    background-color: rgb(38, 37, 34);
+
+
+.sidebar_container{
+    margin: 2rem auto;
+    max-width: 250px;
+    padding: 2em;
+    /* height: 200px; */
+    height: fit-content;
+    /* background-color: brown; */
     /* height: 100vh; */
+    /* font-size: 10px; */
     border: 2px solid rgb(52, 52, 52);
-    display: flex;
+    background-color: rgb(38, 37, 34);
     border-radius: 15px;
+    /* height: 100vh; */
+}
+
+.sidebar{
+    display: flex;
     flex-direction: column;
-    /* position: relative; */
+    /* position: absolute; */
+    /* top: 20%; */
+    /* left: 0; */
+    /* flex-grow: 2; */
+    /* height: 700px; */
+
+    /* padding: 10em auto; */
     justify-content: space-around;
     align-items: center;
     justify-items: center;
-    flex: 0.3;
+    flex:0.3;
+    /* flex-shrink: 20%; */
     
     
 }
@@ -24,15 +44,14 @@
     justify-content: space-between;
 }
 
-.sidebar .image{
-    background-color: rgb(74, 74, 74);
-    border-radius: 12px;
-    width: 200px;
-    height: 200px;
-    border-radius: 15px;
-    margin:  0 auto;
-    
+.myimg{
+    /* background-color: yellow; */
+    /* box-shadow: 2px 2px 10px rgba(60, 59, 59, 0.653); */
+    width: fit-content;
+    /* height: 100%; */
+    /* width: 100%; */
 
+    /* border-radius: 20px; */
 }
 
 .heading h1{
@@ -60,6 +79,7 @@
 }
 
 .sidebar .items{
+    padding: 3em auto;
     display: flex;
     /* flex-direction: column; */
     /* align-items: center; */
@@ -78,11 +98,12 @@
 
 
 .item .content{
+    /* padding: 6em auto; */
     display: flex;
     flex-direction: column;
     margin-left:1rem;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     
 
 }
@@ -104,8 +125,9 @@
 }
 
 .items .contain{
-    padding: 1em;
-    flex:0.8;
+    
+    padding: 2em 0em;
+    flex:0.5;
     margin-right: 1rem;
 }
 
@@ -131,10 +153,10 @@
 
 .logo div{
     /* background-color: aqua; */
-    width: 50px;
+    /* width: 50px; */
     border-radius: 10px;
     background-color: rgb(54, 52, 52);
-    height: 50px;
+    height: 40px;
     margin-left:  4rem;
     padding: 0.7em;
     display: flex;

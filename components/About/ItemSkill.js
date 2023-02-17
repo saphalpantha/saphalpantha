@@ -2,13 +2,18 @@ import React from 'react'
 
 import classes from './ItemSkill.module.css'
 
-const ItemSkill = () => {
+const ItemSkill = (props) => {
+  const {img, title, para} = props;
   return (
     <div className={classes.card}>
-        <div className={classes.cardicon}><h1>$</h1></div>
+        <div className={classes.cardicon}>
+          <span style={{fill:'#f7c86f', width:'3.5rem' , height:'3.5rem'}} >
+            {img}
+          </span>
+          </div>
         <div className={classes.carditems}>
-            <h2>Item Post</h2>
-            <span>The most modern and high-quality design made at a professional level. </span>
+            <h2>{title}</h2>
+            <span>{para}</span>
         </div>
     </div>
   )

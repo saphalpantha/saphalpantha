@@ -14,6 +14,13 @@
 }
 
 
+.map{
+    width: 100%;
+    /* margin: 2rem; */
+    margin: 7rem auto;
+    /* background-color: blueviolet; */
+}
+
 .contactflex{
     display: flex;
     flex-direction: column;
@@ -26,8 +33,10 @@
 .contactflex .map{
     /* height: 30vh; */
     padding: 4em;
+    /* width: 100%; */
 }
 
 .map .mapcont{
+    /* width: 100%; */
     height: 30vh;
 }

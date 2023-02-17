@@ -3,102 +3,30 @@ import Image from 'next/image'
 import classes from './BlogCard.module.css'
 import Card from './Card'
 import Link from 'next/link'
-const BlogCardContain = () => {
-    const title= 'Design Conferences in  2022';
+const BlogCardContain = (props) => {
     return (
     <Fragment>
-    <Link href={`blog/${title}`}>
+    {props.vlogs.map(vlog => {
+        const imgPath = `/images/${vlog.img}`
+        return(
+<Link href={`blog/${vlog.title}`}>
     <Card className={classes.blogcard}>
         <div className={classes.cardcontain}>
             <div className={classes.img}>
-                <Image src="/images/marker.png" width={250} height={250}/>
+                <Image src={imgPath} width={250} height={250}/>
             </div>
             <div className={classes.date}>
-                <span>Design</span>
-                <span>Fab 23 ,2022</span>
+                <span>{vlog.vlog_type}</span>
+                <span>{vlog.date}</span>
             </div>
-                <h2>{title}</h2>
-                <p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
+                <h2>{vlog.title}</h2>
+                <p style={{maxHeight:'2rem', overflow:'hidden'}}>{vlog.desc} </p>
         </div>
     </Card>
     </Link>
-    <Link href={`blog/${title}`}>
-    <Card className={classes.blogcard}>
-        <div className={classes.cardcontain}>
-            <div className={classes.img}>
-                <Image src="/images/marker.png" width={250} height={250}/>
-            </div>
-            <div className={classes.date}>
-                <span>Design</span>
-                <span>Fab 23 ,2022</span>
-            </div>
-                <h2>{title}</h2>
-                <p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
-        </div>
-    </Card>
-    </Link>
-    <Link href={`blog/${title}`}>
-    <Card className={classes.blogcard}>
-        <div className={classes.cardcontain}>
-            <div className={classes.img}>
-                <Image src="/images/marker.png" width={250} height={250}/>
-            </div>
-            <div className={classes.date}>
-                <span>Design</span>
-                <span>Fab 23 ,2022</span>
-            </div>
-                <h2>{title}</h2>
-                <p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
-        </div>
-    </Card>
-    </Link>
-    <Link href={`blog/${title}`}>
-    <Card className={classes.blogcard}>
-        <div className={classes.cardcontain}>
-            <div className={classes.img}>
-                <Image src="/images/marker.png" width={250} height={250}/>
-            </div>
-            <div className={classes.date}>
-                <span>Design</span>
-                <span>Fab 23 ,2022</span>
-            </div>
-                <h2>{title}</h2>
-                <p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
-        </div>
-    </Card>
-    </Link>
-    <Link href={`blog/${title}`}>
-    <Card className={classes.blogcard}>
-        <div className={classes.cardcontain}>
-            <div className={classes.img}>
-                <Image src="/images/marker.png" width={250} height={250}/>
-            </div>
-            <div className={classes.date}>
-                <span>Design</span>
-                <span>Fab 23 ,2022</span>
-            </div>
-                <h2>{title}</h2>
-                <p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
-        </div>
-    </Card>
-    </Link>
-    <Link href={`blog/${title}`}>
-    <Card className={classes.blogcard}>
-        <div className={classes.cardcontain}>
-            <div className={classes.img}>
-                <Image src="/images/marker.png" width={250} height={250}/>
-            </div>
-            <div className={classes.date}>
-                <span>Design</span>
-                <span>Fab 23 ,2022</span>
-            </div>
-                <h2>{title}</h2>
-                <p>Veritatis et quasi architecto beatae vitae dicta sunt, explicabo. </p>
-        </div>
-    </Card>
-    </Link>
-    <Link href={`blog/${title}`}>
-    </Link>
+        )
+    })}
+
     </Fragment>
   )
 }

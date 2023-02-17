@@ -1,0 +1,32 @@
+[
+
+    {
+        "id":"i1",
+        "title":"Exploring the Amazon Rainfores",
+        "img":"blog1.jpg",
+        "vlog_type":"Travel",
+        "desc":"A travel vlog documenting a journey through the Amazon Rainforest. Description: Join us on an adventure as we explore the diverse flora and fauna of the Amazon Rainforest. From discovering new species to immersing ourselves in the local culture, this vlog is sure to be a thrill."
+    },
+    {
+        "id":"i2",
+        "title":"My Daily Skincare Routine",
+        "img":"blog2.jpg",
+        "vlog_type":"Beauty",
+        "desc":"A beauty vlog showcasing the author's daily skincare routine. Description: In this vlog, I'll be sharing my daily skincare routine and the products I use to keep my skin looking its best. Whether you're new to skincare or just looking for some inspiration, this vlog is for you"
+    },
+    {
+        "id":"i3",
+        "title":"Mastering Baking: Cinnamon Rolls",
+        "img":"blog3.jpg",
+        "vlog_type":"Cooking",
+        "desc":" A cooking vlog focusing on baking cinnamon rolls. Description: In this vlog, I'll be teaching you step by step how to bake the perfect cinnamon rolls. From mixing the dough to frosting the rolls, this vlog is sure to leave you with a delicious treat."
+    },
+    {
+        "id":"i4",
+        "title":"A Day in the Life of a Programmer",
+        "img":"blog4.jpg",
+        "vlog_type":"Technology",
+        "desc":" A vlog showing what a day in the life of a programmer looks like. Description: Ever wondered what a day in the life of a programmer looks like? Join me as I take you through my typical workday, from coding to meetings and everything in between."
+    }
+    
+]

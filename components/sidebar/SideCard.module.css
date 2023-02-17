@@ -1,0 +1,23 @@
+.card{
+    border-radius: 15px;
+    /* margin: 4rem; */
+    /* height: 70vh; */
+    background-color: rgb(38, 37, 34);
+    border: 2px solid rgb(52, 52, 52);
+    border-radius: 12px;
+    /* overflow: scroll; */
+        /* background-color: rgb(38, 37, 34); */
+    /* height: 100vh; */
+    /* border: 2px solid rgb(52, 52, 52); */
+    /* display: flex; */
+    /* border-radius: 15px; */
+    /* flex-direction: column; */
+    /* position: relative; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* justify-items: center; */
+    /* height: 100px; */
+    /* flex: 1; */
+}
+
+

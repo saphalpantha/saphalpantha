@@ -1,9 +1,10 @@
+
 import { use, useState } from 'react';
 import classes from './Form.module.css'
 const Form = () => {
-
+  
   const errorData = {nameError:"Name field must contain atleast 6 characters", emailError:"please enter valid email address", messageError:"Your Message must be greater than 5 characters"}
-
+  
   const [enteredName, setEnteredName] = useState('')
   const [enteredEmail, setEnteredEmail] = useState('')
   const [enteredMessage, setEnteredMessage] = useState('') 
@@ -13,40 +14,46 @@ const Form = () => {
   const [nameerror, setNameError] = useState(errorData.nameError);
   const [emailerror, setEmailError] = useState(errorData.emailError);
   const [messageerror, setMessageError] = useState(errorData.messageError);
+  
+
+
+  useState(() => {
+    setMessageError('')
+    setEmailError('')
+    setNameError('')
+  },[isEmailValid, isNameValid, isMessageValid])
   const emailHandler = (event) => {
     setEnteredEmail(event.target.value)
-    if((event.target.value.length > 5 ) && (event.target.value.includes('@'))){
+    if( enteredEmail.includes('@')){
       setEmailValid(true)
     }
     else{
-      setEmailError(errorData.emailError)
       setEmailValid(false)
     }
   }
-
+  
   const nameHandler = (event) =>  {
+
     setEnteredName(event.target.value)
-    if(event.target.value.length > 5){
+    if(enteredName.length > 5){
       setNameValid(true)
     }
     else{
-      setNameError(errorData.nameError)
       setNameValid(false)
     }
   }
 
   const messageHandler = (event) => {
     setEnteredMessage(event.target.value)
-    if(event.target.value.length > 5){
+    if(enteredMessage.length > 5){
       setMessageValid(true)
     }
     else{
       setMessageValid(false)
-      setMessageError(errorData.messageError)
     }
   }
 
-
+  
   const submitHandler = (event) => {
     event.preventDefault()
     const userEntered = {
@@ -54,22 +61,46 @@ const Form = () => {
       email:enteredEmail,
       message:enteredMessage,
     }
-
+    
     
     setEnteredEmail('');
     setEnteredMessage('');
     setEnteredName('');
   }
+  
+
+  // function Hello(){
+  //   return a+b;
+  // }
 
 
-  const namefocusChangeHandler = () => {
-    setNameValid(true);
+
+
+  const namefocusChangeHandler = (event) => {
+    if(event.target.value.length <= 5){
+      setNameError(errorData.nameError)
+      setNameValid(false)
+      
+    }
+    setNameValid(true)
   }
-  const emailfocusChangeHandler = () => {
-    setEmailValid(true);
+  const emailfocusChangeHandler = (event) => {
+    if(event.target.value.length <= 5){
+      setEmailError(errorData.emailError)
+      setEmailValid(false)
+      
+    }
+    
+    setEmailValid(true)
+
   }
-  const messagefocusChangeHandler = () => {
-    setMessageValid(true);
+  const messagefocusChangeHandler = (event) => {
+    if(event.target.value.length <= 5){
+      // console.log('focused');
+      setMessageError(errorData.messageError)
+      setMessageValid(false);
+    }
+    setMessageValid(true)
   }
 
 
@@ -84,16 +115,16 @@ const Form = () => {
         <form className={classes.form} onSubmit={submitHandler}>
           <div className={classes.nameput}>
             <div className={classes.errordiv}>
-            <input type="text" placeholder={"Full Name" } onChange={nameHandler} value={enteredName} className={`${isNameValid ?  classes.colorgreen : classes.colorred}` } onfocus={namefocusChangeHandler}/>
+            <input type="text" placeholder={"Full Name" } onChange={nameHandler} value={enteredName} className={`${isNameValid ?  classes.colorgreen : classes.colorred}` } onFocus={namefocusChangeHandler}/>
             {!isNameValid && <span>{nameerror}</span>}
             </div>
             <div className={classes.errordiv}>
-            <input type="email" placeholder="Email address" onChange={emailHandler} value={enteredEmail} className={`${isEmailValid ?  classes.colorgreen : classes.colorred}`} onfocus={emailfocusChangeHandler}/>
+            <input type="email" placeholder="Email address" onChange={emailHandler} value={enteredEmail} className={`${isEmailValid ?  classes.colorgreen : classes.colorred}`} onFocus={emailfocusChangeHandler}/>
             {!isEmailValid && <span>{emailerror}</span>}
             </div>
           </div>
           <div className={classes.textcontent} >
-            <textarea placeholder='Your Message' onChange={messageHandler} value={enteredMessage} className={`${isMessageValid ?  classes.colorgreen : classes.colorred}`} onfocus={messagefocusChangeHandler} ></textarea> 
+            <textarea placeholder='Your Message' onChange={messageHandler} value={enteredMessage} className={`${isMessageValid ?  classes.colorgreen : classes.colorred}`} onFocus={messagefocusChangeHandler} ></textarea> 
             {!isMessageValid && <span>{messageerror}</span>}
           </div>
 {         <div className={classes.button}>

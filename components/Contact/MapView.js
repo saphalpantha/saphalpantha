@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { useMemo } from 'react'
 import { GoogleMap,Marker, useLoadScript  } from '@react-google-maps/api'
 import classes from './MapView.module.css'
@@ -12,9 +12,12 @@ const MapView = () => {
     if(!isLoaded){
         return <div className={classes.loading}><h1>Loading...</h1></div>
     }
-     return <GoogleMap zoom={17} center={center} mapContainerClassName={`${classes.mapview} ${classes.maphove}`} >
+     return <div>
+
+     <GoogleMap zoom={17} center={center} mapContainerClassName={`${classes.mapview} ${classes.maphove}`}  >
         <Marker position={{lat:20.3544919, lng:85.816383}}/>
      </GoogleMap> 
+     </div> 
 }
 
 export default MapView

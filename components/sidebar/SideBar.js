@@ -8,17 +8,37 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Link from 'next/link';
+import Image from 'next/image';
+import img_src from '../../public/images/mypic.png'
+
+
+const sidebarData = {
+  profile_name:'SAPHAL PANTH',
+  profile_img:img_src,
+  post:"Developer",
+  email:"saphalpantha@gmail.com",
+  phone:"+91-8917520084",
+  // dob: Date('2004-04-10').toString(),
+  dob:'2004-04-10',
+  location:"Bhubaneshwor, Odisha",
+  fb:"",
+  tweet:"",
+  insta:"",
+  link:"",
+  
+}
+
 const SideBar = (props) => {
   
   return (
+    <div className={classes.sidebar_container}>
     <div className={classes.sidebar}>
         <div className={classes.heading}>
-          <div className={classes.image}>
-            <img src="" alt="avatar"/>
-
+          <div className={classes.myimg}>
+            <Image src={sidebarData.profile_img} width={150} height={150} />
           </div>
-          <strong><h1>Name</h1></strong>
-          <span>Position</span>
+          <strong><h1>{sidebarData.profile_name}</h1></strong>
+          <span>{sidebarData.post}</span>
           </div>
           <hr></hr>
 
@@ -33,22 +53,22 @@ const SideBar = (props) => {
         <div className={classes.contains}>
         <div className={classes.contain}>
           <span>Email</span>
-          <h3>main@gmail.com</h3> 
+          <h3>{sidebarData.email}</h3> 
         </div>
         
         <div className={classes.contain}>
           <span>PHONE</span>
-          <h3>+91 000000000000</h3> 
+          <h3>{sidebarData.phone}</h3> 
         </div>
 
         <div className={classes.contain}>
           <span>BIRTHDAY</span>
-          <h3>JAN 10, 2000</h3> 
+          <h3>{sidebarData.dob}</h3> 
         </div>
 
         <div className={classes.contain}>
           <span>Location</span>
-          <h3>Sacramento, California, USA</h3> 
+          <h3>{sidebarData.location}</h3> 
         </div>
         </div>
         </div>
@@ -64,6 +84,7 @@ const SideBar = (props) => {
           </div>
         </div>
     </div>
+      </div>
   )
 }
 

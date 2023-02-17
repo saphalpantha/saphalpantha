@@ -6,6 +6,7 @@
     padding-left: 1em;
     /* line-height: 20px; */
     top : 5%;
+    /* margin: 2rem; */
     /* border: 2px; */
     border-bottom: 5px solid rgb(255, 217, 101);
     border-width: 0.5rem;
@@ -14,10 +15,16 @@
 }
 
 
+.about{
+}
 
+.works{
+    margin: 2rem;
+}
 
 
 .about .aboutflex{
+    /* transition: all 200ms ease-in-out; */
     display: flex;
     /* margin: 0rem auto; */
     flex-direction: column;
@@ -25,7 +32,8 @@
     justify-items: center;
     color: white;
     justify-content: space-between;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    max-width: 100%;
     /* padding: 1em; */
     /* background-color: blue; */
 }
@@ -37,10 +45,21 @@
 
 }
 
+
+.description p:first-child{
+    /* color: red; */
+    /* padding-top: 1em; */
+    padding-top: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: 0em;
+}
 .description p{
     font-size: 2rem;
     font-weight: lighter;
-    padding: 1.5em;
+    padding: 0em 1em;
+    margin-left: 2rem;
+    /* padding-top: 2em; */
     color: rgb(200, 196, 196);
 
     
@@ -55,6 +74,7 @@
     /* padding-bottom:40em ; */
     /* background-color: rgb(48, 158, 255) ; */
     width: 100%;
+    
 
 }
 
@@ -164,9 +184,15 @@
     /* flex-direction: row-reverse; */
     align-items: center;
     /* background-color: brown; */
+    text-align: center;
     justify-items: center;
     /* flex-wrap: wrap; */
 
+}
+
+.clientsitems h1{
+    /* margin: 1rem auto; */
+    font-size: 2rem;
 }
 
 
