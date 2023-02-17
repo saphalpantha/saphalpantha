@@ -13,7 +13,7 @@ const BlogCardContain = (props) => {
     <Card className={classes.blogcard}>
         <div className={classes.cardcontain}>
             <div className={classes.img}>
-                <Image src={imgPath} width={250} height={250}/>
+                <Image src={imgPath} width={250} height={250} alt={vlog.title}/>
             </div>
             <div className={classes.date}>
                 <span>{vlog.vlog_type}</span>
