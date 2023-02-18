@@ -29,11 +29,15 @@
     justify-content: space-evenly;
 }
 
+
+
 .resumeflex .edu{
     display: flex;
     justify-content: space-evenly;
     
 }
+
+
 
  .edu .logo{
     padding-left:2em ;
@@ -41,9 +45,13 @@
 }
 
 
+
+
 .edu .content{
     flex:0.9;
 }
+
+
 
 
 
@@ -53,15 +61,19 @@
     margin-top: 2rem;
     justify-content: space-evenly;
     /* flex-direction: column; */
-
 }
+
+
 
 .experience .logo{
     padding-left:2em ;
     flex: 0.1;
 }
 
+
 .experience .content{
     flex:0.9;
     justify-content: space-evenly;
 }
+
+

@@ -3,25 +3,22 @@ import React, { useState, useEffect } from 'react'
 import classes from './Navigation.module.css'
 import { useMediaQuery } from 'react-responsive';
 import ArrowCircleDownOutlinedIcon from '@mui/icons-material/ArrowCircleDownOutlined';
-import { fontSize } from '@mui/system';
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
 const Navigation = () => {
-
     const [isOpen, setIsOpen] = useState(true);
     const isPhone = useMediaQuery({maxWidth:'769px'})
-    // const navBarHandler = () => {
-    //     console.log('clicked' , Boolean(isOpen))
-    //     setIsOpen((prev) => !prev);
-    // }    
 
-
+    
     const navBarClickHandler = () => {
-        setIsOpen(prev => !prev)
-        
+            setIsOpen(prev => !prev) 
     }
 
 
+        
+
+
     
+
     const navHelper = <nav className={`${classes.nav} ${isOpen ? classes.open : classes.close }}`}> 
     <ul>
         <li>
@@ -41,14 +38,20 @@ const Navigation = () => {
         </li>
     </ul>
     </nav>
+
+    
   return (
       <div className={classes.navigation}>
         <div className={classes.empty}>
         </div>
         {/* <h1>hide</h1> */}
         {/* {(isOpen) ? <div onClick={navBarHandler} style={{width:'30px', height:'50px'  , borderRadius:'10px', margin : '2rem'}}><ArrowCircleDownOutlinedIcon  style={{fill: 'white', width:'100%' , height:'100%' , cursor:'pointer'}}/></div>: navHelper } */}
-        {isPhone && <span onClick={navBarClickHandler} className={classes.nav_bar}><ArrowDropDownCircleIcon className={classes.dropdown} /></span>}
-        {isOpen && navHelper}
+        {(isPhone ) && <span onClick={navBarClickHandler} className={classes.nav_bar}><ArrowDropDownCircleIcon className={classes.dropdown} /></span>}
+        {/* {!isOpen && navHelper} */}
+
+        {(isPhone && !isOpen) && navHelper}
+        {(!isPhone) && navHelper}
+        
         {/* {console.log(isPhone)} */}
     </div>
   )
