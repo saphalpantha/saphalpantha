@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import '../styles/globals.css'
+import Head from 'next/head'
 import SideBar from '../components/sidebar/SideBar'
 
 export default function App({ Component, pageProps }) {
