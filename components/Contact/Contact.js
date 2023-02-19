@@ -3,10 +3,10 @@ import classes from './Contact.module.css'
 import Form from './Form'
 import MapView from './MapView'
 
-
+import {motion as m } from 'framer-motion'
 const Contact = () => {
   return (
-    <div className={classes.contactflex}>
+    <m.div  className={classes.contactflex} initial={{opacity:0}} animate={{opacity:1} } transition={{duration:0.85,ease:'easeOut'}}>
         <header className={classes.heading}>
             <span className={classes.hiii}>
                 <h3>Contact</h3>
@@ -18,7 +18,7 @@ const Contact = () => {
         <div className={classes.form}>
           <Form/>
         </div>
-    </div>
+    </m.div>
   )
 }
 

@@ -6,9 +6,10 @@ import classes from './Resume.module.css'
 import SkillCard from './SkillCard'
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 import ExplicitRoundedIcon from '@mui/icons-material/ExplicitRounded';
+import {motion as m } from 'framer-motion'
 const Resume = () => {
   return (
-    <div className={classes.resume}>
+    <m.div  className={classes.resume} initial={{opacity:0}} animate={{opacity:1} } transition={{duration:0.75,ease:'easeOut'}}>
         <header className={classes.heading}>
             <span>
                 <h3>Resume</h3>
@@ -52,7 +53,7 @@ const Resume = () => {
             </section>
 
         </div>
-</div>
+</m.div>
   )
 }
 

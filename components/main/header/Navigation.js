@@ -4,6 +4,7 @@ import classes from './Navigation.module.css'
 import { useMediaQuery } from 'react-responsive';
 import ArrowCircleDownOutlinedIcon from '@mui/icons-material/ArrowCircleDownOutlined';
 import ArrowDropDownCircleIcon from '@mui/icons-material/ArrowDropDownCircle';
+import {motion as m } from 'framer-motion'
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(true);
     const isPhone = useMediaQuery({maxWidth:'769px'})
@@ -41,7 +42,7 @@ const Navigation = () => {
 
     
   return (
-      <div className={classes.navigation}>
+      <div className={classes.navigation} >
         <div className={classes.empty}>
         </div>
         {/* <h1>hide</h1> */}

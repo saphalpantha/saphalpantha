@@ -6,7 +6,7 @@ import CameraEnhanceIcon from '@mui/icons-material/CameraEnhance';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
-
+import {motion as m } from "framer-motion"
 
 const maintext = "My name is Saphal Pantha from Nepal . I am WebDeveloper, Designer and a Editor. I just love designing and testing something new.I am currently pursuing in Kalinga Institute of Industrial Tech(KIIT) " 
 const sub = "I have a very good experience in web development. I am the lover of tech who likes to learn about new technology.Currently, I know few programming languages like C,C++ Python, Javascript etc and some of styling and Markup languages like CSS, Scss/Sass and HTML My Method  of Working and Designing  is mostly by example, so I usually start by real world problems then I show how it actually works in a real life."
@@ -37,7 +37,7 @@ const AboutData = {
 const AboutPage = () => {
   
   return (
-    <div className={classes.about}>
+  <m.div className={classes.about} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.75,ease:'easeOut'}}>
         <header className={classes.heading}>
             <span className={classes.hiii}>
                 <h3>About Me</h3>
@@ -67,9 +67,9 @@ const AboutPage = () => {
           <section className={classes.testimonials}>
             <div className={classes.testiitems}>    
             {AboutData.test.map(item => {
-                return(
-                  <ItemSkill key={item.id} title={item.title} para={item.para} img={item.icon} />
-                  )
+              return(
+                <ItemSkill key={item.id} title={item.title} para={item.para} img={item.icon} />
+                )
               })}  
             </div>
           </section>
@@ -78,15 +78,15 @@ const AboutPage = () => {
               <span className={classes.hiii}>Clients</span>   
             <div className={`${classes.testiitems} ${classes.clientsitems}`}>
             {AboutData.clients.length > 0 ? AboutData.clients.map(item => {
-                return(
-                  <ItemSkill key={item.id} title={item.title} para={item.para} img={item.icon} />
-                  )
+              return(
+                <ItemSkill key={item.id} title={item.title} para={item.para} img={item.icon} />
+                )
               }) : <h1>No ClientS Yet</h1>}
             </div>
           </section>
 
         </div>
-    </div>
+    </m.div>
   )
 }
 
