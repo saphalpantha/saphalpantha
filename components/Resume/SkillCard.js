@@ -5,10 +5,12 @@ const SkillCard = () => {
 
     
     const skillData = [
-        {id:'v1', title:'web design', val:90},
-        {id:'v2', title:'Graphic Desin', val:50},
+        {id:'v1', title:'web design', val:80},
+        {id:'v2', title:'Graphic Design', val:50},
         {id:'v3', title:'Brandings', val:20},
         {id:'v4', title:'Wordpress', val:40},
+        {id:'v5', title:'Web Frontend', val:95},
+        {id:'v6', title:'Web Backend', val:90},
     ]
 
   return (

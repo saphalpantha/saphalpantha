@@ -9,17 +9,10 @@ const Navigation = () => {
     const [isOpen, setIsOpen] = useState(true);
     const isPhone = useMediaQuery({maxWidth:'769px'})
 
-    
     const navBarClickHandler = () => {
             setIsOpen(prev => !prev) 
     }
-
-
-        
-
-
     
-
     const navHelper = <nav className={`${classes.nav} ${isOpen ? classes.open : classes.close }}`}> 
     <ul>
         <li>

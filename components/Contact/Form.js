@@ -1,8 +1,10 @@
 
 import { use, useState } from 'react';
 import classes from './Form.module.css'
+import {emailjs} from  '@emailjs/browser'
+
 const Form = () => {
-  
+    
   const errorData = {nameError:"Name field must contain atleast 6 characters", emailError:"please enter valid email address", messageError:"Your Message must be greater than 5 characters"}
   
   const [enteredName, setEnteredName] = useState('')
@@ -32,6 +34,7 @@ const Form = () => {
     }
   }
   
+  console.log(emailjs);
   const nameHandler = (event) =>  {
 
     setEnteredName(event.target.value)
@@ -74,6 +77,15 @@ const Form = () => {
   // }
 
 
+
+
+  const sendToEmailHandler = () => {
+    const data = {
+      name:enteredName,
+      eamil:enteredEmail,
+      msg:enteredMessage,
+    }
+  }
 
 
   const namefocusChangeHandler = (event) => {
@@ -128,7 +140,7 @@ const Form = () => {
             {!isMessageValid && <span>{messageerror}</span>}
           </div>
 {         <div className={classes.button}>
-            <button  className={`${classes.button}`} disabled={!isValid}>
+            <button  className={`${classes.button}`} disabled={!isValid} onClick={sendToEmailHandler}>
               send Message
             </button>
           </div>}

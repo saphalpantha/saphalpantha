@@ -7,6 +7,8 @@ import SkillCard from './SkillCard'
 import MenuBookOutlinedIcon from '@mui/icons-material/MenuBookOutlined';
 import ExplicitRoundedIcon from '@mui/icons-material/ExplicitRounded';
 import {motion as m } from 'framer-motion'
+import EduLists from './EduLists';
+import ExpLists from './ExpLists';
 const Resume = () => {
   return (
     <m.div  className={classes.resume} initial={{opacity:0}} animate={{opacity:1} } transition={{duration:0.75,ease:'easeOut'}}>
@@ -24,9 +26,7 @@ const Resume = () => {
                 </div>
                 <div className={classes.content}> 
                     <div><h1>Education</h1></div>
-                    <EduCard/>
-                    <EduCard/>
-                    <EduCard/>
+                    <EduLists/>
                 </div>
             </section>
 
@@ -37,11 +37,7 @@ const Resume = () => {
                 </div>
                 <div className={classes.content}> 
                     <div><h1>Experience</h1></div>
-                    <EduCard/>
-                    <EduCard/>
-                    <EduCard/>
-                    <EduCard/>
-                    <EduCard/>
+                        <ExpLists/>
                 </div>
             </section>
 
@@ -52,6 +48,9 @@ const Resume = () => {
                 <SkillCard/>
             </section>
 
+        </div>
+        <div className={classes.hyper}>
+            
         </div>
 </m.div>
   )

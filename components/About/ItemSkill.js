@@ -1,5 +1,4 @@
 import React from 'react'
-import {motion as m} from 'framer-motion'
 import classes from './ItemSkill.module.css'
 
 const ItemSkill = (props) => {

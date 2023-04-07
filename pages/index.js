@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import HomePage from '../components/Home/Home'
+import Hero from '../components/Hero/Hero'
 // import { Main } from '../components/main/Main'
 import Container from '../components/Home/Home'
 export default function Home() {
@@ -9,7 +10,9 @@ export default function Home() {
           <title>home page</title>
         <meta name="description" content="Homepage"></meta>
     </Head>
-   <HomePage/>
+   <HomePage>
+    <Hero/>
+   </HomePage>
     </>
   )
 }
