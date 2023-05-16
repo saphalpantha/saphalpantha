@@ -21,7 +21,7 @@ const sidebarData = {
   phone:"+91-8917520084",
   // dob: Date('2004-04-10').toString(),
   dob:'2004-04-10',
-  location:"Bhubaneshwor, Odisha",
+  location:"Butwal , Nepal",
   fb:"",
   tweet:"",
   insta:"",
