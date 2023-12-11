@@ -15,7 +15,7 @@ jobs:
     - name: ListFile in directory
       run: ls -l
     - name: Build the Docker image
-      run: docker build -t sp_port/saphalpantha .
+      run: docker build -t sp_port/saphalpantha -f DockerFile .
     - name: Publish image to Docker Hub
       run: docker push sp_port/saphalpantha:latest
 
