@@ -40,7 +40,7 @@ export  const authOptions = {
                         
                     const isPasswordMatched = await bcrypt.compare(userCredintials.password,user.password );
                     if(!isPasswordMatched){
-                        throw new Error('Invalid User Credentials!!');
+                        throw new Error('Invalid User Credentials!!!');
                     }
                     return {
                         user:userCredintials.username,
