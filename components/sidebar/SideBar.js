@@ -14,11 +14,11 @@ import { useViewportScroll } from 'framer-motion';
 import { useTransform } from 'framer-motion';
 import {motion as m } from 'framer-motion'
 const sidebarData = {
-  profile_name:'SAPHAL PANTH',
+  profile_name:'SAPHAL PANTHA',
   profile_img:img_src,
   post:"Developer",
   email:"saphalpantha@gmail.com",
-  phone:"+91-8917520084",
+  phone:"9863566886",
   // dob: Date('2004-04-10').toString(),
   dob:'2004-04-10',
   location:"Butwal , Nepal",
